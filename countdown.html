@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intraverse</title>
+    <link rel="icon" href="logos/INTRAVERSE_FAVICON-01.png" />
+    <link rel="apple-touch-icon" href="logos/INTRAVERSE_FAVICON-01.png" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.min.css" />
+  </head>
+
+  <body style="background-color: black">
+    <div id="preloader"></div>
+    <div class="container" style="height: 100vh">
+      <div class="row">
+        <div
+          class="
+            col-12
+            d-flex
+            flex-column
+            align-items-center
+            justify-content-center
+            mt-5
+          "
+        >
+          <!-- countdown -->
+          <br />
+          <div class="container mt-4">
+            <div
+              id="countdown"
+              class="row justify-content-center align-items-center"
+            ></div>
+          </div>
+          <!-- countdown -->
+          <!-- text  -->
+          <!-- <br><br><br> -->
+          <div class="container mt-5 countdown-text">
+            <div class="row">
+              <div
+                class="
+                  col-12
+                  d-flex
+                  flex-column
+                  align-items-center
+                  justify-content-center
+                "
+              >
+                <h1 class="p6">Join the waiting list</h1>
+                <h1 class="p6">to get early access</h1>
+                <p class="p7"><b>#2000 people have already joined</b></p>
+              </div>
+            </div>
+            <div class="row">
+              <div
+                class="
+                  col-12
+                  d-flex
+                  flex-row
+                  align-items-center
+                  justify-content-between
+                "
+              >
+                <button class="register-now-button my-0 mx-auto">
+                  Register Now
+                </button>
+                <img
+                  src="Planets/INTRAVERSE_planet12_484x496.png"
+                  class="planet3-img float-right"
+                />
+              </div>
+            </div>
+          </div>
+          <!--
+                <br> -->
+          <!-- end text -->
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/CSSRulePlugin.min.js"></script>
+  <script src="js/countdown.min.js"></script>
+  <script src="js/preloader.js"></script>
+  <script>
+    var t1 = gsap.timeline({ default: { duration: 1 } });
+    t1.from("#countdown", {
+      x: 500,
+      stagger: 0.6,
+      opacity: 0,
+      ease: "power2.out",
+      duration: 2.0,
+    }).from(".countdown-text", { opacity: 0 });
+  </script>
+  <script>
+    const cd = new Date().getFullYear() + 1;
+    $("#countdown").countdown({
+      year: cd,
+    });
+  </script>
+</html>

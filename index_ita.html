@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intraverse</title>
+    <link rel="icon" href="logos/INTRAVERSE_FAVICON-01.png" />
+    <link rel="apple-touch-icon" href="logos/INTRAVERSE_FAVICON-01.png" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/countdown.min.js"></script>
+  </head>
+  <body>
+    <!-- End Footer -->
+    <div id="preloader"></div>
+    <!-- Nav bar -->
+    <nav
+      class="
+        navbar navbar-expand-lg navbar-dark
+        bg-custom-dark
+        fixed-top
+        d-none
+      "
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="logos/INTRAVERSE_LOGO-02.png"
+            class="img-fluid"
+            style="border-radius: 50%"
+          />
+        </a>
+        <li class="nav-item d-block d-md-block d-xl-none">
+          <button
+            onclick="javascript:location.href='dashboard_ita.html'"
+            class="
+              btn btn-lg btn-block
+              play-to-earn-button play-to-earn-button-mobile
+            "
+          >
+            Play
+          </button>
+        </li>
+        <button
+          class="navbar-toggler mr-4"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-md-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#mission">MISSIONE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">whitepaper</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#igo">igo</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <i class="fa fa-globe"></i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="index.html">America(English)</a>
+                <a class="dropdown-item" href="index_ita.html"
+                  >Italy(Italian)</a
+                >
+                <a class="dropdown-item" href="#">Iran(Persian)</a>
+              </div>
+            </li>
+
+            <li class="nav-item d-none d-md-none d-xl-block">
+              <button
+                onclick="javascript:location.href='login_ita.html'"
+                class="btn btn-lg btn-block play-to-earn-button"
+              >
+                Play
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="col-12 div1">
+      <!-- End nav bar -->
+      <div class="container p-4">
+        <div class="row">
+          <!-- main logo -->
+          <br />
+          <div
+            class="
+              col-12
+              d-flex
+              flex-column
+              align-items-center
+              justify-content-center
+              mt-5
+              pt-4
+              main-images
+            "
+          >
+            <img
+              src="Planets/INTRAVERSE_planet2_484x496.png"
+              class="planet1-image mt-4"
+            />
+            <img src="logos/INTRAVERSE_logo_cutout.png" class="img-fluid m-4" />
+            <img
+              src="Planets/INTRAVERSE_planet1_484x496.png"
+              class="planet2-image"
+            />
+          </div>
+
+          <!-- end main logo -->
+          <!-- text  -->
+          <div
+            class="
+              col-12
+              d-flex
+              flex-column
+              align-items-center
+              justify-content-center
+              mt-4
+              main-text
+            "
+          >
+            <h1>GIOCA E GUADAGNA</h1>
+            <h1>I PRIMI TOKEN</h1>
+            <a href="login_ita.html" class="btn play-to-earn-button my-4">
+              <b>Play To Earn</b>
+            </a>
+          </div>
+
+          <!-- end text -->
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="
+        col-12
+        d-flex
+        flex-column
+        align-items-center
+        justify-content-center
+        bg-custom-dark
+        p10
+      "
+    >
+      <div class="my-3">
+        <div
+          class="planet-div d-flex align-items-start justify-content-end"
+          data-aos="fade-up"
+          data-aos-once="true"
+        >
+          <img src="Planets/INTRAVERSE_planet3_484x496.png" />
+        </div>
+        <p>IL PRIMO</p>
+        <p><b> PLAY-TO-EARN </b></p>
+        <p>
+          CHE DISTRIBUISCE I TOKEN TRA I GIOCATORI DELLA COMMUNITY ATTRAVERSO UN SISTEMA INNOVATIVO CHIAMATO
+        </p>
+        <p><b>“INITIAL GAME OFFERING”</b></p>
+        <div
+          class="planet-div d-flex align-items-start justify-content-start"
+          data-aos="fade-down"
+          data-aos-once="true"
+          data-aos-anchor-placement="top-bottom"
+        >
+          <img src="Planets/INTRAVERSE_planet4_484x496.png" />
+        </div>
+      </div>
+    </div>
+    <div class="col-12 div3">
+      <div class="container">
+        <div class="row">
+          <!-- start text -->
+          <div
+            class="
+              col-12
+              d-flex
+              flex-column
+              align-items-center
+              justify-content-center
+            "
+          >
+            <p class="p9 mt-4"><b>COS’É INTRAVERSE?</b></p>
+            <p class="p10 mt-4 font-weight-bold">
+              É UN POSTO CHE ESISTE SOLAMENTE NELLA TUA TESTA.
+            </p>
+            <p class="p10 text-lowercase">
+              Intraverse è un’ ecosistema di universi differenti (verses) in cui i creatori e i brand possono realizzare il proprio universo personale, esattamente come lo immaginano nella propria mente, così da permettere alle persone di esplorare mondi mai conosciuti prima d’ora ed al contempo guadagnare token.
+
+
+            </p>
+            <div
+              class="
+                planet-div
+                d-flex
+                align-items-end
+                justify-content-end
+                w-100
+              "
+              data-aos="fade-up"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-bottom"
+            >
+              <img src="Planets/INTRAVERSE_planet5_484x496.png" />
+            </div>
+            <br />
+          </div>
+          <!-- end text -->
+          <div class="row mx-4 p10">
+            <div class="col-md-4">
+              <img
+                src="Planets/INTRAVERSE_planet6_484x541.png"
+                alt="Snow"
+                style="width: 100%"
+              />
+              <p>-ElonVERSE-</p>
+            </div>
+            <div class="col-md-4">
+              <img
+                src="Planets/INTRAVERSE_planet8_484x542.png"
+                alt="Forest"
+                style="width: 100%"
+              />
+              <p>-Bitverse-</p>
+            </div>
+            <div class="col-md-4">
+              <img
+                src="Planets/INTRAVERSE_planet7_484x542.png"
+                alt="Mountains"
+                style="width: 100%"
+              />
+              <p>-Dogrverse-</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12" id="igo">
+      <div class="row">
+        <div
+          class="
+            col-12
+            d-flex
+            flex-column
+            align-items-center
+            justify-content-center
+            bg-custom-dark
+          "
+        >
+          <div
+            class="
+              planet-div
+              d-flex
+              align-items-start
+              justify-content-start
+              w-100
+            "
+            data-aos="fade-down"
+            data-aos-once="true"
+            data-aos-anchor-placement="top-bottom"
+          >
+            <img src="Planets/INTRAVERSE_planet11_484x496.png" />
+          </div>
+          <p class="p9 mt-4"><b>Initial game offering</b></p>
+          <p class="p10 m-4">
+            L’unico modo per ottenere la cryptomoneta di Intraverse è giocando! La nostra ICO è chiamata appunto <b>Initial Game Offering<</b>, dove l’ammontare iniziale messo a disposizione dei giocatori è pari a 150.000.000 monete (15% dell’offerta totale).
+          </p>
+          <div class="container mx-4">
+            <div
+              id="countdown"
+              class="row justify-content-center align-items-center"
+            ></div>
+          </div>
+          <div class="row m-4">
+            <p class="p11 m-4">Entra nella waiting list per avere un accesso anticipato al gioco!</p>
+          </div>
+          <p class="p7">2000 persone si sono già registrate per giocare a Intraverse</p>
+          <a href="registerpage_ita.html" class="btn register-now-button"
+            >REGISTRATI ORA</a
+          >
+          <br /><br /><br /><br />
+        </div>
+      </div>
+    </div>
+    <div class="col-12 div5" id="mission">
+      <div class="container p-4">
+        <div class="row">
+          <!-- start text -->
+          <div
+            class="
+              col-12
+              d-flex
+              flex-column
+              align-items-center
+              justify-content-center
+              p-4
+            "
+          >
+            <p class="p9 mt-4"><b>LA NOSTRA MISSIONE</b></p>
+            <p class="p10">
+              La missione di Intraverse è dare potere ai giocatori! Dando la possibilità di guadagnare giocando.
+Crediamo infatti che giocare può essere considerato un vero e proprio lavoro ed i giocatori devono essere pagati per i propri sforzi.
+
+            </p>
+            <div
+              class="
+                planet-div
+                d-flex
+                align-items-center
+                justify-content-center
+                w-100
+              "
+              data-aos="fade-down"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-bottom"
+            >
+              <img src="Planets/INTRAVERSE_planet10_484x496.png" />
+            </div>
+          </div>
+          <!-- end text -->
+        </div>
+      </div>
+    </div>
+    <div class="col-12 p10 bg-custom-dark">
+      <div class="owl-slider">
+        <div id="carousel" class="owl-carousel">
+          <div class="item">
+            <img src="1x/coin1.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="1x/coin2.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="1x/coin3.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="1x/coin4.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row div6">
+      <div class="col-12 d-flex flex-column">
+        <p class="p9 m-4"><b>IL NOSTRO TEAM</b></p>
+        <div class="owl-slider">
+          <div id="carousel-teams" class="owl-carousel">
+            <div class="item">
+              <div class="row justify-content-center">
+                <img src="team/1.png" class="team-image" />
+              </div>
+              <div
+                class="row justify-content-center"
+                style="margin-bottom: -15px"
+              >
+                <p class="p13">
+                  Mortaza <br />
+                  <span>shani</span>
+                </p>
+              </div>
+              <div class="row justify-content-center">
+                <p class="p15">
+                  strategy <br />
+                  Tokenomics <br />
+                  Marketing
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="row justify-content-center">
+                <img src="team/2.png" class="team-image" />
+              </div>
+              <div
+                class="row justify-content-center"
+                style="margin-bottom: -15px"
+              >
+                <p class="p13">
+                  SOHEYLA <br />
+                  <span>HAGHIGHI</span>
+                </p>
+              </div>
+              <div class="row justify-content-center">
+                <p class="p15">
+                  UI/UX <br />
+                  CONTENT CREATION <br />
+                  COMMUNICATION <br />
+                  COMMUNITY
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="row justify-content-center">
+                <img src="team/3.png" class="team-image" />
+              </div>
+              <div
+                class="row justify-content-center"
+                style="margin-bottom: -15px"
+              >
+                <p class="p13">
+                  ANDREA <br />
+                  <span>MALTESE</span>
+                </p>
+              </div>
+              <div class="row justify-content-center">
+                <p class="p15">
+                  BACK END DEVELOPER <br />
+                  INFRASTRUCTURE ARCHITECT <br />
+                  TOKENOMICS <br />
+                  MARKETING <br />
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="row justify-content-center">
+                <img src="team/4.png" class="team-image" />
+              </div>
+              <div
+                class="row justify-content-center"
+                style="margin-bottom: -15px"
+              >
+                <p class="p13">
+                  ABDUL <br />
+                  <span>HASEEB</span>
+                </p>
+              </div>
+              <div class="row justify-content-center">
+                <p class="p15">
+                  GAME DEVELOPER <br />
+                  WEB DEVELOPER <br />
+                  UNITY/WEBGL <br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="
+          col-12
+          d-flex
+          flex-column
+          align-items-center
+          justify-content-start
+          bg-custom-dark
+        "
+      >
+        <p class="p9 m-4"><b> FAQ - DOMANDE FREQUENTI</b></p>
+        <div class="col-md-6 tabs-alt tab-content m-2 p-4">
+          <div class="tab-pane active" id="all">
+            <div
+              class="panel panel-default my-4"
+              style="border-bottom: 2px solid #686868"
+            >
+              <div class="panel-heading">
+                <h5 class="panel-title boxhead">
+                  <a
+                    class="accordion-toggle collapsed-icon faq-tabs"
+                    data-toggle="collapse"
+                    href="#collapse1"
+                    ><span class="icon gfx-question-1 iconleft"></span
+                    ><b>COSA SIGNIFICA IGO?
+                    </b></a
+                  >
+                </h5>
+              </div>
+              <div id="collapse1" class="panel-collapse collapse in">
+                <div class="panel-body faq-tab-res my-4 py-4">
+                  <b
+                    >IGO significa Initial Game Offering e nella pratica consiste nel distribuire le prime monete ai primi utenti che inizieranno a giocare ad Intraverse.
+                    </b
+                  >
+                </div>
+              </div>
+            </div>
+            <br />
+            <div
+              class="panel panel-default my-4"
+              style="border-bottom: 2px solid #686868"
+            >
+              <div class="panel-heading">
+                <h5 class="panel-title boxhead">
+                  <a
+                    class="accordion-toggle collapsed-icon faq-tabs"
+                    data-toggle="collapse"
+                    href="#collapse2"
+                    ><span class="icon gfx-question-1 iconleft"></span
+                    ><b>QUANDO INIZIA LA IGO?
+                    </b></a
+                  >
+                </h5>
+              </div>
+              <div id="collapse2" class="panel-collapse collapse in">
+                <div class="panel-body faq-tab-res my-4 py-4 font-weight-bold">
+                  Abbiamo iniziato lo sviluppo del gioco e come vedi dal contatore manca poco tempo per essere live con Intraverse.
+                </div>
+              </div>
+            </div>
+            <br />
+
+            <div
+              class="panel panel-default my-4"
+              style="border-bottom: 2px solid #686868"
+            >
+              <div class="panel-heading">
+                <h5 class="panel-title boxhead">
+                  <a
+                    class="accordion-toggle collapsed-icon faq-tabs"
+                    data-toggle="collapse"
+                    href="#collapse4"
+                    ><span class="icon gfx-question-1 iconleft"></span
+                    ><b>QUANTI TOKEN POSSO GUADAGNARE CON LA IGO? </b></a
+                  >
+                </h5>
+              </div>
+              <div id="collapse4" class="panel-collapse collapse in">
+                <div class="panel-body faq-tab-res my-4 py-4 font-weight-bold">
+                  Ogni utente può guadagnare giocando fino a 500 token. É possibile guadagnare più token (oltre ai 500 già guadagnati) tramite il referral ad un amico: invita un amico a giocare ad Intraverse e potrai guadagnare fino a 20 monete in più per ogni amico che si registrerà con il tuo referral.
+
+                </div>
+              </div>
+            </div>
+            <br />
+            <div
+              class="panel panel-default my-4"
+              style="border-bottom: 2px solid #686868"
+            >
+              <div class="panel-heading">
+                <h5 class="panel-title boxhead">
+                  <a
+                    class="accordion-toggle collapsed-icon faq-tabs"
+                    data-toggle="collapse"
+                    href="#collapse6"
+                    ><span class="icon gfx-question-1 iconleft"></span
+                    ><b>COS’É IL “PLAY-TO-EARN”?</b></a
+                  >
+                </h5>
+              </div>
+              <div id="collapse6" class="panel-collapse collapse in">
+                <div class="panel-body faq-tab-res my-4 py-4 font-weight-bold">
+                  Letteralmente significa “Gioca-Per-Guadagnare” ed è un trend emergente nel mondo dei video-game. In pratica i giocatori sono ripagati per i loro sforzi nel giocare e completare i livelli del gioco tramite un pagamento in cryptocurrency oppure in NFTs (Non-Fungible-Tokens).
+
+                </div>
+              </div>
+            </div>
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 bg-custom-dark">
+      <div class="container p-4">
+        <div class="row">
+          <div
+            class="
+              col-12
+              d-flex
+              flex-column
+              align-items-center
+              justify-content-center
+              p-4
+            "
+          >
+            <p class="p9 mt-4"><b>RIMANI AGGIORNATO</b></p>
+            <div class="row d-flex align-items-center justify-content-center">
+              <a href="">
+                <i class="fa fa-facebook-f social-link mx-4"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-twitter social-link mx-4"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-youtube-play social-link mx-4"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-twitch social-link mx-4"></i>
+              </a>
+              <a href="">
+                <i class="fab fa-discord social-link mx-4"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-linkedin social-link mx-4"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-instagram social-link mx-4"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <div class="float-left">
+              <p class="p16">Discover</p>
+              <p class="p17">Download launcher</p>
+              <p class="p17">Support</p>
+              <p class="p17">Privacy notice</p>
+              <p class="p17">Terms of use</p>
+              <p class="p17">White paper</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="float-left">
+              <p class="p16">Feature</p>
+              <p class="p17">Overview</p>
+              <p class="p17">Design</p>
+              <p class="p17">Code</p>
+              <p class="p17">Colaboration</p>
+            </div>
+          </div>
+        </div>
+        <hr style="border: 1px solid gray" />
+        <div class="row">
+          <div class="col-md-6 footer-logo">
+            <img
+              src="logos/INTRAVERSE_logo_cutout.png"
+              width="220px"
+              height="115px"
+              alt=""
+            />
+          </div>
+          <div class="col-md-6">
+            <p class="float-right mt-4 text-white">
+              Copyright 2021 © INTRAVERSE All rights Reserved. Design by
+              INTRAVERSE <br />PRIVACY (is our) POLICY
+            </p>
+          </div>
+        </div>
+        <br />
+        <br />
+      </div>
+    </div>
+  </body>
+  <script>
+    const cd = new Date().getFullYear() + 1;
+    $("#countdown").countdown({
+      year: cd,
+    });
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/CSSRulePlugin.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="js/preloader.js"></script>
+  <script src="js/scroll.js"></script>
+  <script>
+    $(window).on("load", function () {
+      var t1 = gsap.timeline({ default: { duration: 1 } });
+      t1.from(".main-images", {
+        x: 500,
+        stagger: 0.6,
+        opacity: 0,
+        ease: "power2.out",
+        duration: 2.0,
+      }).from(".main-text", { opacity: 0 });
+    });
+  </script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    jQuery("#carousel").owlCarousel({
+      autoplay: true,
+      lazyLoad: true,
+      loop: true,
+      margin: 10,
+      padding: 10,
+      dots: false,
+      responsiveClass: true,
+      autoplayTimeout: 3000,
+      smartSpeed: 800,
+      responsive: {
+        0: {
+          items: 3,
+        },
+
+        600: {
+          items: 3,
+        },
+
+        1024: {
+          items: 4,
+        },
+
+        1366: {
+          items: 4,
+        },
+      },
+    });
+  </script>
+  <script>
+    jQuery("#carousel-teams").owlCarousel({
+      autoplay: true,
+      lazyLoad: true,
+      loop: true,
+      margin: 10,
+      padding: 10,
+      dots: false,
+      responsiveClass: true,
+      autoplayTimeout: 10000,
+      smartSpeed: 1000,
+      responsive: {
+        0: {
+          items: 2,
+        },
+
+        600: {
+          items: 2,
+        },
+
+        1024: {
+          items: 4,
+        },
+
+        1366: {
+          items: 4,
+        },
+      },
+    });
+  </script>
+</html>

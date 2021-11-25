@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intraverse</title>
+    <link rel="icon" href="logos/INTRAVERSE_FAVICON-01.png" />
+    <link rel="apple-touch-icon" href="logos/INTRAVERSE_FAVICON-01.png" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+    />
+    <link rel="stylesheet" href="style.min.css" />
+  </head>
+  <body id="earn-more-body">
+    <div id="preloader"></div>
+    <div id="wrapper">
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper" class="d-none">
+        <ul class="sidebar-nav">
+          <a id="close-nav">
+            <i class="fa fa-times"></i>
+          </a>
+          <li class="sidebar-brand">
+            <a href="index.html">
+              <img src="logos/main-logo.png" />
+            </a>
+          </li>
+          <li>
+            <a href="dashboard.html">play</a>
+          </li>
+          <li>
+            <a href="earn-more.html" class="active">Referal</a>
+          </li>
+          <li>
+            <a href="account.html">account</a>
+          </li>
+          <li>
+            <a href="#" id="logout">log out</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /#sidebar-wrapper -->
+      <div id="page-content-wrapper">
+        <div class="sidebar-show">
+          <a href="index.html">
+            <img src="logos/main-logo.png" />
+          </a>
+          <a id="open-nav">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        <div class="container dashboard-container">
+          <div class="row">
+            <div
+              class="
+                col-12
+                d-flex
+                flex-column
+                align-items-center
+                justify-content-between
+              "
+            >
+              <img
+                src="logos/INTRAVERSE_LOGO_transparent.png"
+                style="margin-top: 50px"
+              />
+              <br />
+              <h1 class="earn-more-text my-4">
+                Earn more coins with the REFERAL MODE!
+              </h1>
+              <br />
+              <!-- Show referal code here for copy -->
+              <p id="copy" style="display: none">#ABC1234</p>
+              <div class="referal-code btn mb-4" id="ref">
+                #ABC1234
+                <i
+                  class="fa fa-copy ml-4"
+                  onclick="CopyToClipboard('copy')"
+                ></i>
+              </div>
+              <button class="btn btn-lg btn-block play-to-earn-button">
+                SHARE
+              </button>
+              <br />
+              <h1 style="margin-bottom: 100px">
+                GET AHEAD IN THE WAITING LIST BY SHARING YOUR REFERRAL CODE.
+                <br>
+                IF A FRIEND REGISTERS USING YOUR CODE BOTH OF YOU GET 100 POINTS MORE!
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a id="emailfront"></a>
+    <a id="coins"></a>
+    <script type="module" src="js/firebaseapp_ita.js"></script>
+  </body>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="js/countdown.min.js"></script>
+  <script src="js/preloader.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <script>
+    $("#close-nav").click(function (e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+      $(".sidebar-show").css("display", "block");
+    });
+    $("#open-nav").click(function (e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+      $(".sidebar-show").css("display", "none");
+    });
+  </script>
+  <script>
+    const cd = new Date().getFullYear() + 1;
+    $("#countdown").countdown({
+      year: cd,
+    });
+  </script>
+  <script>
+    function CopyToClipboard(id) {
+      var r = document.createRange();
+      r.selectNode(document.getElementById(id));
+      window.getSelection().removeAllRanges();
+      window.getSelection().addRange(r);
+      document.execCommand("copy");
+      window.getSelection().removeAllRanges();
+      toastr.success("Text Copied.", "Success", { timeOut: 5000 });
+    }
+  </script>
+</html>

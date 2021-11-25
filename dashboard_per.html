@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intraverse</title>
+    <link rel="icon" href="logos/INTRAVERSE_FAVICON-01.png" />
+    <link rel="apple-touch-icon" href="logos/INTRAVERSE_FAVICON-01.png" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.min.css" />
+  </head>
+  <body id="dashboard-body">
+    <div id="preloader"></div>
+    <div id="wrapper">
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper" class="d-none">
+        <ul class="sidebar-nav">
+          <a id="close-nav">
+            <i class="fa fa-times"></i>
+          </a>
+          <li class="sidebar-brand">
+            <a href="index_per.html">
+              <img src="logos/main-logo.png" />
+            </a>
+          </li>
+          <li>
+            <a href="dashboard_per.html"  style="font-size:large" class="active">بازی</a>
+          </li>
+          <li>
+            <a href="earn-more_per.html" style="font-size: large;">ارز دیجیتالی بیشتر کسب کن
+            </a>
+          </li>
+          <li>
+            <a href="account_per.html"  style="font-size: large;">حساب</a>
+          </li>
+          <li>
+            <a href="#" id = "logout" style="font-size: large;">خروج</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /#sidebar-wrapper -->
+      <!-- Page Content -->
+      <div id="page-content-wrapper" class="dashboard-content-wrapper">
+        <div class="sidebar-show">
+          <a href="index_per.html">
+            <img src="logos/main-logo.png" />
+          </a>
+          <a id="open-nav">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        <div class="container dashboard-container">
+          <div class="row">
+            <div
+              class="
+                col-12
+                d-flex
+                flex-column
+                align-items-center
+                justify-content-center
+              "
+            >
+              <img src="logos/INTRAVERSE_LOGO_transparent.png" />
+              <h1>تبریک میگم!</h1>
+              <h1>شما در لیست دسترسی زودهنگام هستید،</h1>
+              <h1>شما قبل از دیگران بازی خواهید کرد.</h1>
+              <button class="btn btn-lg btn-block play-to-earn-button mb-2">
+                Play
+              </button>
+              <h1>IGO زنده خواهد بود</h1>
+              <div
+                id="countdown"
+                class="
+                  row
+                  justify-content-center
+                  align-items-between
+                  w-100
+                  mt-3
+                "
+              ></div>
+              <button
+                onclick="window.location='earn-more_per.html'"
+                class="btn btn-lg btn-block play-to-earn-button my-3"
+              >
+              Earn more            </button>
+              <h1>
+                با ما همراه باشید
+
+              </h1>
+              <div
+                class="icons d-flex flex-row justify-content-between w-25 pb-3"
+              >
+                <i class="fab fa-telegram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-discord"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /#page-content-wrapper -->
+    </div>
+    <script type="module" src="js/firebaseapp_per.js"></script>
+  </body>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="js/countdown.min.js"></script>
+  <script src="js/preloader.js"></script>
+  <script>
+    $(document).ready(function () {
+    $(window).on("resize", function (e) {
+        checkScreenSize();
+    });
+    checkScreenSize();
+    $("#close-nav").click(function (e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+      $(".sidebar-show").css("display", "block");
+      // $("#page-content-wrapper").css("padding-bottom", "100px");
+      checkScreenSize();
+    });
+    $("#open-nav").click(function (e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+      $(".sidebar-show").css("display", "none");
+      // $("#page-content-wrapper").css("padding-bottom", "0px");
+      checkScreenSize();
+    });
+    function checkScreenSize(){
+      console.log($('#wrapper').hasClass('toggled'));
+        var newWindowWidth = $(window).width();
+        if (newWindowWidth < 481 && $('#wrapper').hasClass('toggled')==true) {
+           $('#page-content-wrapper .dashboard-container').css('position','fixed');
+           $('body').css('background-attachment','fixed')
+        }
+        else{
+          $('#page-content-wrapper .dashboard-container').css('position','relative');
+        }
+    }
+});
+
+  </script>
+  <script>
+    const cd = new Date().getFullYear() + 1;
+    $("#countdown").countdown({
+      year: cd,
+    });
+  </script>
+</html>

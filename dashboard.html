@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intraverse</title>
+    <link rel="icon" href="logos/INTRAVERSE_FAVICON-01.png" />
+    <link rel="apple-touch-icon" href="logos/INTRAVERSE_FAVICON-01.png" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.min.css" />
+  </head>
+  <body id="dashboard-body">
+    <div id="preloader"></div>
+    <div id="wrapper">
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper" class="d-none">
+        <ul class="sidebar-nav">
+          <a id="close-nav">
+            <i class="fa fa-times"></i>
+          </a>
+          <li class="sidebar-brand">
+            <a href="index.html">
+              <img src="logos/main-logo.png" />
+            </a>
+          </li>
+          <li>
+            <a href="dashboard.html" class="active">play</a>
+          </li>
+          <li>
+            <a href="earn-more.html">Referal</a>
+          </li>
+          <li>
+            <a href="account.html">account</a>
+          </li>
+          <li>
+            <a href="#" id="logout">log out</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /#sidebar-wrapper -->
+      <!-- Page Content -->
+      <div id="page-content-wrapper" class="dashboard-content-wrapper">
+        <div class="sidebar-show">
+          <a href="index.html">
+            <img src="logos/main-logo.png" />
+          </a>
+          <a id="open-nav">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        <div class="container dashboard-container">
+          <div class="row">
+            <div
+              class="
+                col-12
+                d-flex
+                flex-column
+                align-items-center
+                justify-content-center
+              "
+            >
+              <img src="logos/INTRAVERSE_LOGO_transparent.png" />
+              <h1>Congrats!</h1>
+              <h1>You are in the Early Access list,</h1>
+              <h1 style="color: #0ff" id="notifyPos">Your position is 1.145 in the list.</h1>
+              <!-- Add a table here -->
+              <div class="table-responsive">
+
+              <table class="table table-dark table-dashboard">
+                <thead>
+                  <tr>
+                    <th scope="col">RANK</th>
+                    <th scope="col">NAME</th>
+
+                    <th scope="col">POINTS*</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" >1</th>
+                    <td  id ="firstEmail">ju****ke@gmail.com</td>
+
+                    <td  id ="firstPoints">250</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" >2</th>
+                    <td  id ="secondEmail">ju****ke@gmail.com</td>
+
+                    <td  id ="secondPoints">250</td>
+                  </tr>
+                  <tr >
+                    <th scope="row" >3</th>
+                    <td  id ="thirdEmail">ju****ke@gmail.com</td>
+
+                    <td  id ="thirdPoints">250</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" >4</th>
+                    <td  id ="fourthEmail">ju****ke@gmail.com</td>
+
+                    <td  id ="fourthPoints">250</td>
+                  </tr>
+                  <tr class="custom-table-row">
+                    <th scope="row" id="posUser">5</th>
+
+                    <td  id ="userEmail">ju****ke@gmail.com</td>
+
+                    <td id ="userPoints">250</td>
+                  </tr>
+                </tbody>
+              </table>
+              </div>
+              <h2 class="my-3">
+                <span>
+                  *POINTS DETERMINE ONLY THE RANKING OF THIS LIST.<br />YOUR
+                  POSITION IN THE LIST WILL SHOW YOUR TURN TO JOIN THE GAME.
+                  <br />
+                </span>
+
+                HOW TO GET MORE POINTS AND SCALE UP THE LIST? <br />EACH
+                REFERRAL = 100 POINTS
+              </h2>
+              <button
+                class="btn btn-lg btn-block play-to-earn-button mb-2"
+                onclick="window.location='earn-more.html'"
+              >
+                REFER A FRIEND
+              </button>
+              <h1>The IGO will be live in</h1>
+              <div
+                id="countdown"
+                class="
+                  row
+                  justify-content-center
+                  align-items-between
+                  w-100
+                  mt-3
+                "
+              ></div>
+              <button
+                onclick="window.location='earn-more.html'"
+                class="btn btn-lg btn-block play-to-earn-button my-3"
+              >
+                ENTER THE ARENA
+              </button>
+              <h1>
+                Follow us on our Channels where there will be news about the
+                date!
+              </h1>
+              <div
+                class="icons d-flex flex-row justify-content-between w-25 pb-3"
+              >
+                <i class="fab fa-telegram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-discord"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /#page-content-wrapper -->
+
+    <script type="module" src="js/firebaseapp.js"></script>
+  </body>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="js/countdown.min.js"></script>
+  <script src="js/preloader.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(window).on("resize", function (e) {
+        checkScreenSize();
+      });
+      checkScreenSize();
+      $("#close-nav").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+        $(".sidebar-show").css("display", "block");
+        // $("#page-content-wrapper").css("padding-bottom", "100px");
+        checkScreenSize();
+      });
+      $("#open-nav").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+        $(".sidebar-show").css("display", "none");
+        // $("#page-content-wrapper").css("padding-bottom", "0px");
+        checkScreenSize();
+      });
+      function checkScreenSize() {
+        console.log($("#wrapper").hasClass("toggled"));
+        var newWindowWidth = $(window).width();
+        if (newWindowWidth < 481 && $("#wrapper").hasClass("toggled") == true) {
+          $("#page-content-wrapper .dashboard-container").css(
+            "position",
+            "fixed"
+          );
+          $("body").css("background-attachment", "fixed");
+        } else {
+          $("#page-content-wrapper .dashboard-container").css(
+            "position",
+            "relative"
+          );
+        }
+      }
+    });
+  </script>
+  <script>
+    const cd = new Date().getFullYear() + 1;
+    $("#countdown").countdown({
+      year: cd,
+    });
+  </script>
+</html>
